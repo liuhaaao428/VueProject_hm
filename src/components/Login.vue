@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       loginForm: {
         username: '',
@@ -47,10 +47,10 @@ export default {
     }
   },
   methods: {
-    reset () {
+    reset() {
       this.$refs.loginFormRef.resetFields()
     },
-    login () {
+    login() {
       this.$refs.loginFormRef.validate(async valid => {
         // console.log(valid)
         if (!valid) return
